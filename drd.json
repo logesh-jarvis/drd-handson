@@ -1,0 +1,46 @@
+{
+  "project_name": "sourcecodes",
+  "last_updated": "2024-07-13T15:12:16.276088",
+  "files": [
+    {
+      "filename": "main.py",
+      "type": "py",
+      "last_modified": "2024-07-13T14:58:38.147899",
+      "content_preview": "from fastapi import FastAPI, HTTPException\nfrom pydantic import BaseModel\nfrom claude_service import...",
+      "description": "FastAPI app for generating coding questions with endpoints for root, items, and question creation."
+    },
+    {
+      "filename": "requirements.txt",
+      "type": "txt",
+      "last_modified": "2024-07-13T15:04:51.125814",
+      "content_preview": "aiohttp==3.9.5\naiosignal==1.3.1\nannotated-types==0.7.0\nanthropic==0.2.8\nanyio==4.4.0\nargon2-cffi==23...",
+      "description": "Comprehensive Python dependencies list for a FastAPI project with Anthropic integration, Jupyter notebooks support, and various data processing and web development libraries. Includes specific version requirements for each package to ensure compatibility."
+    },
+    {
+      "filename": "drd.json",
+      "type": "json",
+      "last_modified": "2024-07-13T15:12:16.276116",
+      "content_preview": "{\n  \"project_name\": \"sourcecodes\",\n  \"last_updated\": \"2024-07-13T15:12:16.224586\",\n  \"files\": [\n    ...",
+      "description": ""
+    },
+    {
+      "filename": ".env",
+      "type": "env",
+      "last_modified": "2024-07-13T12:54:51.752724",
+      "content_preview": "ANTHROPIC_API_KEY=your_anthropic_api_key_here",
+      "description": "Environment file containing API key for Anthropic services"
+    },
+    {
+      "filename": "claude_service.py",
+      "type": "py",
+      "last_modified": "2024-07-13T15:12:16.224606",
+      "content_preview": "import os\nimport json\nfrom dotenv import load_dotenv\nfrom anthropic import Anthropic, HUMAN_PROMPT, ...",
+      "description": "Python script using Anthropic API to generate coding questions in JSON format with various details"
+    }
+  ],
+  "dev_server": {
+    "start_command": "venv/bin/uvicorn main:app --reload",
+    "framework": "FastAPI",
+    "language": "Python"
+  }
+}
